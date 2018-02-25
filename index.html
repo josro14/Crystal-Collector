@@ -5,52 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Crystal Game</title>
 </head>
 
 <body>
-    <h1>Crystals Collector!</h1>
-    <div class="instructions">
-        <p>You will be given a random number at the start of the game.</p>
-        <p>By clicking on one of the four crystals below, you will add a specific amount of points to your total score.</p>
-        <P>You win the game by matching your total score to the random number; you lose the game if your total score goes above
-            the random number.</P>
-        <p> The value of each crystal is hidden until you click on it.</p>
-        <p>Each time when the game starts, the game will change the values of each crystal.</p>
-    </div>
-    <div class="row-md-10">
-        <div class="col-md-3">
-            <div class="number-box">
-                <h3 id="number-gen"></h3>
+    <div class="container">
+        <h1>Crystals Collector!</h1>
+        <div class="instructions">
+            <h2>Instructions:</h2>
+            <p>You will be given a random number at the start of the game.</p>
+            <p>By clicking on one of the four crystals below, you will add a specific amount of points to your total score.</p>
+            <P>You win the game by matching your total score to the random number; you lose the game if your total score goes
+                above the random number.</P>
+            <p>The value of each crystal is hidden until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        </div>
+        <div class="row-md-10">
+            <div class="col-md-3">
+                <div class="number-box">
+                    <h2>Your Number:</h2>
+                    <h3 id="number-gen"></h3>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="win-loss-box">
+                    <p id="win-count">Wins:</p>
+                    <p id="loss-count">Losses:</p>
+                </div>
             </div>
         </div>
-        <div class="col-md-2">
-            <div class="win-loss-box">
-                <p id="win-count">Wins:</p>
-                <p id="loss-count">Losses:</p>
+        <div class="row">
+            <div class="col" id="crystal-1">
+                <img id="ruby" src="assets/images/ruby.png" alt="ruby">
+            </div>
+            <div class="col" id="crystal-2">
+                <img id="crystal" src="assets/images/crystal.png" alt="crystal">
+            </div>
+            <div class="col" id="crystal-3">
+                <img id="gem" src="assets/images/gem.png" alt="gem">
+            </div>
+            <div class="col" id="crystal-4">
+                <img id="sapphire" src="assets/images/sapphire.png" alt="sapphire">
             </div>
         </div>
-    </div>
-    <div class="row-md-8">
-        <div class="col-md-2" id="crystal-1">
-            <img>
+        <div class="state-score">
+            <p>Your total score is:</p>
         </div>
-        <div class="col-md-2" id="crystal-2">
-            <img>
-        </div>
-        <div class="col-md-2" id="crystal-3">
-            <img>
-        </div>
-        <div class="col-md-2" id="crystal-4">
-            <img>
+        <div class="score-box">
+            <h3 id="score"></h3>
         </div>
     </div>
-    <div class="state-score">
-        <p>Your total score is:</p>
-    </div>
-    <div class="score-box">
-        <h3 id="score"></h3>
-    </div>
+    <footer>
+        <p>© Copywrite 2018 Josh Roberts</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/game.js"></script>
 </body>
 
 </html>
