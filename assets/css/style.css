@@ -1,6 +1,11 @@
 img {
     width: 150px;
     height: 150px;
+    margin-bottom: 15px;
+}
+
+.titulo {
+    border-bottom: solid grey;
 }
 
 img:hover {

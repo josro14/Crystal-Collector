@@ -13,7 +13,7 @@
 
 <body>
     <div class="container">
-        <h1>Crystals Collector!</h1>
+        <h1 class="titulo">Crystals Collector!</h1>
         <div class="instructions">
             <h2>Instructions:</h2>
             <p>You will be given a random number at the start of the game.</p>
@@ -24,13 +24,13 @@
             <p>Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
         <div class="row-md-10">
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="number-box">
-                    <h2>Your Number:</h2>
+                    <h2>Your Number To Reach:</h2>
                     <h3 id="number-gen"></h3>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-4">
                 <div class="win-loss-box">
                     <p id="win-count">Wins:</p>
                     <p id="loss-count">Losses:</p>
@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="state-score">
-            <p>Your total score is:</p>
+            <h3 id="current-score">Your current score is:</h3>
         </div>
         <div class="score-box">
             <h3 id="score"></h3>
@@ -63,7 +63,7 @@
     </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/game.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
